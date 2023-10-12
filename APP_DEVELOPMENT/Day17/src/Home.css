@@ -1,0 +1,42 @@
+.rbody{
+  background-image :url('https://www.thoughtco.com/thmb/2h-RY3CpPBzFGICSfLEYnt4HdRE=/2122x1415/filters:fill(auto,1)/Disaster-Relief-472133675-56a148ea5f9b58b7d0bdd1f7.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+  width: 100%;
+  height: 100vh
+}
+
+.header {
+  overflow: hidden;
+  background-color: transparent;
+  padding: 20px 10px;
+  /* position:fixed;
+  z-index: 1; */
+  
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  padding-left: 80px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header .logo {
+  font-size: 25px;
+  padding-right: 500px;
+  font-weight: bold;
+  font-family: cursive;
+  font-style: italic;
+}
+.header-right li:hover
+{
+    text-decoration:3px solid underline;
+    color: blueviolet;
+   
+}
