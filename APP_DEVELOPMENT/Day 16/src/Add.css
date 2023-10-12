@@ -1,0 +1,79 @@
+/* Apply styles to the entire page */
+#body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Form container style */
+  .container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+  }
+  
+  /* Form header style */
+  .header {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Form input field style */
+  .input {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Submit and Cancel button styles */
+  .e-signup-btn, .e-cancel-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .e-signup-btn {
+    background-color: #007bff;
+  }
+  
+  .e-cancel-btn {
+    background-color: #d9534f;
+    margin-top: 10px;
+  }
+  
+  /* Link style */
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Alert message style */
+  .alert {
+    text-align: center;
+    color: #d9534f;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 480px) {
+    .container {
+      width: 90%;
+    }
+  }
