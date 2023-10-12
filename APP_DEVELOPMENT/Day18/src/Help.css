@@ -1,0 +1,395 @@
+
+.body2 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    min-height: 100%;
+    bottom: 0;
+    
+  }
+  
+  @media only screen and (max-width: 991px) {
+    body {
+      position: static;
+    }
+  }
+  
+  
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+  
+  .navbar,
+  .navbar .nav > li > a {
+    color: white;
+  }
+  .navbar,
+  .navbar .nav > li > a:hover {
+    color: white;
+  }
+  
+  .sr-only {
+    background: black;
+  }
+  /* Navigation bar */
+  
+  /*Settings menu*/
+  .cog_icon {
+    position: fixed;
+    top: 10%;
+    right: 4%;
+    width: 9%;
+  }
+  
+  .cog {
+    width: 100%;
+  }
+  
+  .cog2 {
+    /*This cog only appears on collaposed navbar*/
+    width: 100%;
+  }
+  
+  .cog_icon2 {
+    position: fixed;
+    top: 1%;
+    left: 2%;
+    width: 40px;
+  }
+  
+  .cog_icon2 {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .cog_icon2 {
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .cog_icon {
+      display: none;
+    }
+  }
+  
+  .cog_icon:hover {
+    /*Turns cog black on hover*/
+    filter: brightness(0);
+    -webkit-filter: brightness(0);
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* .cog:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  } */
+  
+  .settings {
+    /*Entire menu*/
+    position: fixed;
+    margin-top: 2.5%;
+    color: black;
+    top: 10%;
+    right: 4%;
+    width: 220px;
+    height: 150px;
+    background: #fcfff4; /* Old browsers */
+    background: -moz-linear-gradient(
+      -45deg,
+      #fcfff4 0%,
+      #dfe5d7 40%,
+      #b3bead 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      -45deg,
+      #fcfff4 0%,
+      #dfe5d7 40%,
+      #b3bead 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      135deg,
+      #fcfff4 0%,
+      #dfe5d7 40%,
+      #b3bead 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    display: inline-block;
+    z-index: 1000;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 3px;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .settings {
+      margin-right: 10%;
+    }
+  }
+  
+  .topbar {
+    /*Top bar of settings menu*/
+    background: #b7deed; /* Old browsers */
+    background: -moz-linear-gradient(
+      -45deg,
+      #b7deed 0%,
+      #b187a8 51%,
+      #b187a8 51%,
+      #b7deed 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      -45deg,
+      #b7deed 0%,
+      #71ceef 50%,
+      #21b4e2 51%,
+      #825679 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      135deg,
+      #b7deed 0%,
+      #71ceef 50%,
+      #b187a8 51%,
+      #b7deed 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    height: 24%;
+    border-bottom-style: solid;
+    border-color: black;
+    border-width: 3px;
+  }
+  
+  .topbar_text {
+    margin-top: 1.2%;
+    margin-left: 8%;
+    width: 72%;
+    height: 90%;
+    float: left;
+    text-align: center;
+    font-size: 21px;
+    vertical-align: middle;
+    line-height: normal;
+    font-weight: bold;
+  }
+  
+  .topbar_img {
+    /*Cross/exit button div*/
+    background: #f85032; /* Old browsers */
+    background: -moz-linear-gradient(
+      -45deg,
+      #f85032 0%,
+      #f16f5c 50%,
+      #f6290c 51%,
+      #f02f17 71%,
+      #e73827 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      -45deg,
+      #f85032 0%,
+      #f16f5c 50%,
+      #f6290c 51%,
+      #f02f17 71%,
+      #e73827 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      135deg,
+      #f85032 0%,
+      #f16f5c 50%,
+      #f6290c 51%,
+      #f02f17 71%,
+      #e73827 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    border-left-style: solid;
+    border-width: 3px;
+    border-color: black;
+  }
+  
+  .cross {
+    /*Cross/exit button itself*/
+    width: 80%;
+  }
+  
+  #ChangeFontSizeButton {
+    width: 40%;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 6%;
+    font-size: 35px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(
+      -45deg,
+      #ffffff 0%,
+      #f1f1f1 50%,
+      #e1e1e1 51%,
+      #f6f6f6 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      -45deg,
+      #ffffff 0%,
+      #f1f1f1 50%,
+      #e1e1e1 51%,
+      #f6f6f6 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #f1f1f1 50%,
+      #e1e1e1 51%,
+      #f6f6f6 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+  
+  /*Settings menu*/
+  
+  /*Homepage, first header*/
+  .head1 {
+    padding-top: 3%;
+    padding-bottom: 2.5%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    height: 34%;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .head1 {
+      display: none;
+    }
+  }
+  
+  .logo {
+    width: 60%;
+    display: block;
+    margin: auto;
+    text-align: right;
+    margin-right: 10%;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .cube_shield {
+      margin-top: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .logo {
+      width: 90%;
+    }
+  }
+  
+  /*Homepage, first header*/
+  
+  /*Homepage, second header*/
+  .head2 {
+    background-image: url(http://i.imgur.com/WTr5fgT.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 2%;
+    height: 66%;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .head2 {
+      padding-top: 15%;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .head2 {
+      height: 100%;
+    }
+  }
+  
+  .help,
+  .info,
+  .scale,
+  .book,
+  .web,
+  .globe {
+    /*Images*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    width: 40%;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .help,
+    .info,
+    .scale,
+    .book,
+    .web,
+    .globe {
+      width: 80%;
+    }
+  }
+  
+  .row2 {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .howtouse,
+  .myrights,
+  .findinghelp,
+  .dictionary,
+  .contacts,
+  .about {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  /*Homepage animations*/
+  .helpgrid {
+    filter: none;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  
+  .helpgrid:hover,
+  .infogrid:hover,
+  .findinghelpgrid:hover,
+  .dictionarygrid:hover,
+  .dictionarygrid:hover,
+  .contactsgrid:hover,
+  .aboutgrid:hover,
+  .cog:hover {
+    filter: brightness(0);
+    -webkit-filter: brightness(0);
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .cube_shield {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  /*Homepage, second header*/
+  
