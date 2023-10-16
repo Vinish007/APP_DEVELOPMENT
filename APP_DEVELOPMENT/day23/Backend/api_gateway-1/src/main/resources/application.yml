@@ -1,0 +1,24 @@
+
+eureka:
+  instance:
+    hostname: localhost
+
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: USER-SERVICE
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/api/v1/users/**
+        - id: FEEDBACK-SERVICE
+          uri: lb://FEEDBACK-SERVICE
+          predicates:
+            - Path=/api/v1/feed/**
+        
+          
+  
+            
